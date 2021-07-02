@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Registration">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:id="@+id/rellayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/raalogo" />
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/signup"
+                    android:layout_below="@+id/logo"
+                    android:textColor="@color/bleck" />
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/logintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/signuptext"
+                    android:layout_below="@+id/login"
+                    android:textColor="@color/grey" />
+
+                <RelativeLayout
+                    android:id="@+id/relFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="13dp"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/user" />
+
+                    <com.hopetechno.raadarbar.Fonts.CEditText
+                        android:id="@+id/fname"
+                        android:singleLine="true"
+                        android:layout_width="fill_parent"
+                        android:paddingLeft="25dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:hint="@string/first_name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/user" />
+
+                    <com.hopetechno.raadarbar.Fonts.CEditText
+                        android:id="@+id/mname"
+                        android:paddingLeft="25dp"
+                        android:singleLine="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NA"
+                        android:hint="@string/mname" />
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/user" />
+
+                    <com.hopetechno.raadarbar.Fonts.CEditText
+                        android:id="@+id/lname"
+                        android:paddingLeft="25dp"
+                        android:singleLine="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:hint="@string/lname" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/mobile" />
+
+                    <com.hopetechno.raadarbar.Fonts.CEditText
+                        android:id="@+id/monumber"
+                        android:paddingLeft="25dp"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mobilenumber" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/email" />
+
+                    <com.hopetechno.raadarbar.Fonts.CEditText
+                        android:id="@+id/emailedit"
+                        android:paddingLeft="25dp"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/emailadd" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.hopetechno.raadarbar.Fonts.CEditText
+                        android:id="@+id/pass"
+                        android:paddingLeft="25dp"
+                        android:singleLine="true"
+                        android:password="true"
+                        android:inputType="textPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/pass" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/password" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/password" />
+
+                    <com.hopetechno.raadarbar.Fonts.CEditText
+                        android:id="@+id/cpass"
+                        android:paddingLeft="25dp"
+                        android:singleLine="true"
+                        android:password="true"
+                        android:inputType="textPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cpass" />
+                </RelativeLayout>
+
+
+                <com.hopetechno.raadarbar.Fonts.CButton
+                    android:id="@+id/singubutton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="@string/signup"
+                    android:background="@color/appred"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/rellayout" />
+
+
+                <LinearLayout
+                    android:layout_below="@+id/forgetpass"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content">
+
+                    <com.hopetechno.raadarbar.Fonts.CTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="@string/alaccount"
+                        android:textColor="@color/bleck" />
+
+                    <com.hopetechno.raadarbar.Fonts.CTextView
+                        android:id="@+id/relogin"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="17dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loginnow"
+                        android:textColor="@color/appred" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

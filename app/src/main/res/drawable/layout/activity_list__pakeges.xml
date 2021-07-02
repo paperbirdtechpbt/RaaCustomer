@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.List_Pakeges">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/datelayout"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded"
+            android:orientation="horizontal">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/date"
+                android:textColor="@color/bleck"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:id="@+id/prebooking"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/preebookingh" />
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:choiceMode="singleChoice"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/selectedvelue"
+                android:text="@string/cartype"
+                android:textColor="@color/bleck"
+                android:textSize="@dimen/_17sdp"
+                android:layout_margin="15dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ListView
+                android:id="@+id/listone"
+                android:layout_width="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/raalogo" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:text="@string/forgetpassnew"
+            android:layout_below="@+id/logo"
+            android:textColor="@color/bleck" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/logintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/forgetpasstext"
+            android:layout_below="@+id/login"
+            android:textColor="@color/grey" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/resetlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/resetlink"
+            android:layout_below="@+id/logintext"
+            android:textColor="@color/lightgrey" />
+
+        <RelativeLayout
+            android:id="@+id/rellayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/resetlink">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="13dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/email" />
+
+            <com.hopetechno.raadarbar.Fonts.CEditText
+                android:id="@+id/monumber"
+                android:layout_width="fill_parent"
+                android:paddingLeft="25dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:hint="@string/emialenter" />
+
+        </RelativeLayout>
+
+
+        <com.hopetechno.raadarbar.Fonts.CButton
+            android:id="@+id/sendbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:text="@string/send"
+            android:background="@color/appred"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rellayout" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/sendbutton"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="@string/alaccount"
+                android:textColor="@color/bleck" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/loginagain"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:layout_height="wrap_content"
+                android:text="@string/loginnow"
+                android:textColor="@color/appred" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

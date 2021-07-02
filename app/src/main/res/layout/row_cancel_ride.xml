@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp">
+
+
+    <com.hopetechno.raadarbar.Fonts.CTextView
+        android:id="@+id/textCancelRide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_3sdp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/textCancelRide"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="@color/grey" />
+
+
+</RelativeLayout>

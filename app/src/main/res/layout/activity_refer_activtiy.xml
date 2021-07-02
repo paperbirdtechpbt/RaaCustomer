@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp"
+    tools:context=".Activity.ReferActivtiy">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/refer_header" />
+
+    <com.hopetechno.raadarbar.Fonts.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="@string/refertitle"
+        android:textColor="@color/bleck"
+        android:textSize="@dimen/_18sdp" />
+
+    <com.hopetechno.raadarbar.Fonts.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="@string/referdescription"
+        android:textColor="@color/bleck"
+        android:textSize="@dimen/_12sdp" />
+
+    <com.hopetechno.raadarbar.Fonts.CButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:id="@+id/btn_invites"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:background="@drawable/submit_button_border"
+        android:text="Send Invites"
+        android:textColor="@color/white" />
+</LinearLayout>

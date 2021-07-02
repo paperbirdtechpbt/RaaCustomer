@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CustHomePageActivity"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/incitylayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/rounded">
+
+                    <com.hopetechno.raadarbar.Fonts.CTextView
+                        android:id="@+id/incitytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/incity"
+                        android:textColor="@color/bleck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rentallayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/rounded">
+
+                    <com.hopetechno.raadarbar.Fonts.CTextView
+                        android:id="@+id/rentaltext"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center"
+                        android:text="@string/rental"
+                        android:textColor="@color/bleck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/outcitylayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@drawable/rounded">
+
+                    <com.hopetechno.raadarbar.Fonts.CTextView
+                        android:id="@+id/outcitytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/outcity"
+                        android:textColor="@color/bleck" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

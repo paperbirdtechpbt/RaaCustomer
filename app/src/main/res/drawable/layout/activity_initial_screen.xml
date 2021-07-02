@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/access_code" />
+
+            <com.hopetechno.raadarbar.Fonts.CEditText
+                android:id="@+id/accessCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="4YRUXLSRO20O8NIH">
+
+                <requestFocus />
+            </com.hopetechno.raadarbar.Fonts.CEditText>>
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/merchant_id" />
+
+            <com.hopetechno.raadarbar.Fonts.CEditText
+                android:id="@+id/merchantId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="2236512" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="Order Id" />
+
+            <com.hopetechno.raadarbar.Fonts.CEditText
+                android:id="@+id/orderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/currency" />
+
+            <com.hopetechno.raadarbar.Fonts.CEditText
+                android:id="@+id/currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="INR" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/amount" />
+
+            <com.hopetechno.raadarbar.Fonts.CEditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="1.00" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/redirect_url" />
+
+            <com.hopetechno.raadarbar.Fonts.CEditText
+                android:id="@+id/redirectUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textUri"
+                android:text="http://122.182.6.216/merchant/ccavResponseHandler.jsp" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/cancel_url" />
+
+            <com.hopetechno.raadarbar.Fonts.CEditText
+                android:id="@+id/cancelUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textUri"
+                android:text="http://122.182.6.216/merchant/ccavResponseHandler.jsp" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/rsa_url" />
+
+            <com.hopetechno.raadarbar.Fonts.CEditText
+                android:id="@+id/rsaUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textUri"
+                android:text="https://secure.ccavenue.com/transaction/jsp/GetRSA.jsp" />
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:onClick="onClick"
+                android:text="@string/pay_button" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Customer.AdvanceBookingThanks">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/yourbookingdone"
+            android:layout_marginBottom="50dp" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bookingdone"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/bleck"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/bleck"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="normal" />
+
+        <com.hopetechno.raadarbar.Fonts.CButton
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:background="@drawable/button_border" />
+
+    </LinearLayout>
+
+</RelativeLayout>

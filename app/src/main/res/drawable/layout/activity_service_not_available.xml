@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:theme="@style/Theme.Design.NoActionBar"
+    tools:context=".Dialog.ServiceNotAvailable">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appred"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_back"
+            android:id="@+id/imgback"
+            />
+
+            <TextView
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raa"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/appred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:id="@+id/txt1"
+            android:text="@string/ServiceNot"/>
+
+        <com.hopetechno.raadarbar.Fonts.CButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_below="@+id/txt1"
+            android:visibility="visible"
+            android:layout_margin="25dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonBack"
+            android:textColor="@color/white"
+            android:background="@drawable/button_border" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

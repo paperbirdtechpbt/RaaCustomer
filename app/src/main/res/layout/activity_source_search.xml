@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Customer.source_search"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin">
+
+        <com.hopetechno.raadarbar.Fonts.CEditText
+            android:id="@+id/edittext_search_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:hint="@string/enter_source">
+
+            <requestFocus />
+        </com.hopetechno.raadarbar.Fonts.CEditText>
+
+
+        <ListView
+            android:id="@+id/listview_search_places"
+            android:divider="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/listview_favourite"
+            android:layout_width="match_parent"
+            android:divider="@null"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</LinearLayout>

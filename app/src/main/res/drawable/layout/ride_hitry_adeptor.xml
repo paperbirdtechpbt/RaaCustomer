@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="datetime"
+                android:textSize="17dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/bleck" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From Place"
+                android:textSize="15dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/bleck" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/carnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="carnumber"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/bleck"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25036"
+                android:textSize="17dp"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/bleck"
+                android:textStyle="bold" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Place"
+                android:textSize="15dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/bleck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/one"
+        android:orientation="horizontal">
+
+        <com.hopetechno.raadarbar.Fonts.CButton
+            android:id="@+id/clickfordetail"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Details"
+            android:textColor="@color/bleck"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/details"
+            android:layout_below="@+id/one" />
+
+        <com.hopetechno.raadarbar.Fonts.CButton
+            android:id="@+id/bill"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bleck"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Bill Download"
+            android:drawableLeft="@drawable/downlod"
+            android:layout_below="@+id/one" />
+    </LinearLayout>
+
+
+</RelativeLayout>

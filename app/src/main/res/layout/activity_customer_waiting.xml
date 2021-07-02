@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CutomerWaitingActivity">
+
+    <com.hopetechno.raadarbar.Fonts.CTextView
+        android:id="@+id/txtTagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#7f0a1d"
+        android:gravity="center"
+        android:minLines="2"
+        android:singleLine="false"
+        android:textColor="@color/white" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtTagline"
+        tools:context=".Customer.Cutomer_waiting_screen" />
+
+    <ImageView
+        android:id="@+id/big_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight=".75"
+            android:text="Pickup from "
+            android:textColor="@color/bleck"
+            android:textSize="18dp" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/carcoming"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@drawable/rounded"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="2dp"-->
+            <!--android:weightSum="2">-->
+        <LinearLayout
+            android:id="@+id/carcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="2">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/textViewwait"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.35"
+                android:textColor="@color/bleck"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.65"
+                android:background="@drawable/rounded_textview"
+                android:textColor="@color/bleck"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/drivar_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Address"
+                    android:textColor="@color/bleck"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Address"
+                    android:textColor="@color/bleck"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/bleck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/car_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Address"
+                    android:textColor="@color/bleck"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Address"
+                    android:textColor="@color/bleck"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancel_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:background="@drawable/button_border"
+                android:text="Cancel Trip"
+                android:textColor="@color/white" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/address_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+
+                android:ellipsize="end"
+                android:text="@string/app_name"
+                android:textColor="@color/bleck" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/address_desc"
+                android:layout_below="@+id/address_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="@dimen/_12sdp"
+                android:maxLines="2"
+                android:text="@string/app_name"
+                android:textColor="@color/grey" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginStart="60dp"
+        android:background="@color/grey" />
+</LinearLayout>
+

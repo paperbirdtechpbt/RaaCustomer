@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:id="@+id/louttop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cancel_ride_confrim"
+            android:textAlignment="center"
+            android:textSize="@dimen/_20sdp" />
+
+        <com.hopetechno.raadarbar.Fonts.CEditText
+            android:id="@+id/edtremark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:hint="Add remark for cancel ride" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/louttop"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/textyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="Yes"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/textno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/textyes"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="No"
+
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+</RelativeLayout>

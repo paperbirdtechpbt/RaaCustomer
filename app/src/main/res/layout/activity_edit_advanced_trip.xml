@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".Activity.EditAdvancedTripActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:id="@+id/incitylayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".5"
+                android:background="@drawable/rounded">
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/incitytext"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/incity"
+                    android:textColor="@color/bleck"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rentallayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".5"
+                android:background="@drawable/rounded"
+                android:visibility="gone">
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/rentaltext"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="@string/rental"
+                    android:textColor="@color/bleck"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/outcitylayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/rounded">
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/outcitytext"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/outcity"
+                    android:textColor="@color/bleck"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:id="@+id/map"
+                  android:name="com.google.android.gms.maps.SupportMapFragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  tools:context=".MapsActivity"/>
+
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Pickup from "
+                android:textSize="12dp"/>
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Address"
+                android:textSize="@dimen/_20sdp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/sourcelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/pickup"/>
+
+                <com.hopetechno.raadarbar.Fonts.CEditText
+                    android:id="@+id/editText1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:layout_weight="7"
+                    android:clickable="true"
+                    android:hint="@string/source"
+                    android:inputType="text"
+                    android:labelFor="@+id/editText1"
+                    android:textColorHint="@color/bleck"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/destlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/dropoff"/>
+
+                <com.hopetechno.raadarbar.Fonts.CEditText
+                    android:id="@+id/editText2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:layout_weight="7"
+                    android:clickable="true"
+                    android:hint="@string/destination"
+                    android:inputType="text"
+                    android:labelFor="@+id/editText1"
+                    android:textColorHint="@color/bleck"/>
+
+            </LinearLayout>
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText1"
+                android:layout_gravity="center_horizontal"
+                android:text="Get Direction"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/testlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/rounded"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="Booking Date Time"
+                android:textColor="@color/appred"/>
+
+            <LinearLayout
+                android:id="@+id/datelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:background="@drawable/rounded"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp">
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/textdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bleck"
+                    android:textSize="15dp"
+                />
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/bleck"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+
+                <com.hopetechno.raadarbar.Fonts.CButton
+                    android:id="@+id/prebooking"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/preebookingh"/>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="2">-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Journey Start Date"-->
+            <!--android:textColor="@color/appred"-->
+            <!--android:textSize="@dimen/_14sdp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Journey Start Time"-->
+            <!--android:textColor="@color/appred"-->
+            <!--android:textSize="@dimen/_14sdp"-->
+            <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/relativeLayout2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="2">-->
+
+            <!--<androidx.cardview.widget.CardView-->
+            <!--android:id="@+id/card_view"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/view_shadow"-->
+            <!--android:elevation="4dp">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:id="@+id/startdate_txt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="18-01-2020"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="@dimen/_14sdp"-->
+            <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/startdate_icon"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@drawable/preebookingh"-->
+            <!--android:visibility="visible" />-->
+
+            <!--</RelativeLayout>-->
+            <!--</RelativeLayout>-->
+            <!--</androidx.cardview.widget.CardView>-->
+
+            <!--<androidx.cardview.widget.CardView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/view_shadow"-->
+            <!--android:elevation="4dp">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:id="@+id/starttime_txt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="05:34 AM"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="@dimen/_14sdp"-->
+            <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/starttime_icon"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@drawable/preebookingh"-->
+            <!--android:visibility="visible" />-->
+            <!--</RelativeLayout>-->
+            <!--</RelativeLayout>-->
+            <!--</androidx.cardview.widget.CardView>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/_10sdp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone"-->
+            <!--android:weightSum="2">-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Journey End Date"-->
+            <!--android:textColor="@color/appred"-->
+            <!--android:textSize="@dimen/_14sdp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:text="Journey End Time"-->
+            <!--android:textColor="@color/appred"-->
+            <!--android:textSize="@dimen/_14sdp"-->
+            <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/relativeLayout3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/relativeLayout2"-->
+            <!--android:layout_marginBottom="@dimen/_8sdp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone"-->
+            <!--android:weightSum="2">-->
+
+            <!--<androidx.cardview.widget.CardView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/view_shadow"-->
+            <!--android:elevation="4dp">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:id="@+id/enddate_txt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="19-01-2020"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="@dimen/_14sdp"-->
+            <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/enddate_icon"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@drawable/preebookingh"-->
+            <!--android:visibility="visible" />-->
+            <!--</RelativeLayout>-->
+            <!--</RelativeLayout>-->
+            <!--</androidx.cardview.widget.CardView>-->
+
+            <!--<androidx.cardview.widget.CardView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/view_shadow">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:id="@+id/endtime_txt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="07:35 AM"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="@dimen/_14sdp"-->
+            <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/endtime_icon"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@drawable/preebookingh"-->
+            <!--android:visibility="visible" />-->
+            <!--</RelativeLayout>-->
+            <!--</RelativeLayout>-->
+            <!--</androidx.cardview.widget.CardView>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+        <com.hopetechno.raadarbar.Fonts.CButton
+            android:id="@+id/updatedata"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/button_border"
+            android:text="Get Price"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</LinearLayout>

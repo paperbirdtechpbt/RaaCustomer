@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hopetechno.raadarbar">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation,ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION/" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission
+        android:name="android.permission.LOCATION_HARDWARE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW " />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE" />
+    <uses-permission android:name="com.huawei.permission.external_app_settings.USE_COMPONENT" />
+
+    <application
+        android:name=".Other.AppController"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activity.OepnPdfVieverActivity"></activity>
+        <activity
+            android:name=".Dialog.ServiceNotAvailable"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".Dialog.EnterMailDialog" />
+        <activity android:name=".Dialog.CustomDialogClass" />
+        <activity android:name=".Activity.PdfViewActivity"
+            android:label="PDF View"/>
+        <activity
+            android:name=".Activity.RaaQRCodeActivity"
+            android:label="@string/myqr_code" />
+        <activity
+            android:name=".Activity.ReferActivtiy"
+            android:label="@string/refer"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.WalletActivity" />
+        <activity
+            android:name=".Activity.PhoneNumberVerifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity> <!-- SMS Receiver -->
+        <!-- <receiver android:name=".Receiver.SmsReceiver"> -->
+        <!-- <intent-filter android:priority="99999"> -->
+        <!-- <action android:name="android.provider.Telephony.SMS_RECEIVED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name=".StartMyActivityAtBootReceiver" -->
+        <!-- android:label="StartMyServiceAtBootReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver -->
+        <!-- android:name=".Notification.MyFirebaseMessagingService$ActionReceiver" -->
+        <!-- android:label="StartMyServiceAtBootReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.mydomain.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activity.EditAdvancedTripActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.UpdateAdvancebknSelectedPakegeShow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OtpVerificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.NotificationDisplayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.FeaturesActivity"
+            android:label="@string/goodfeature"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OffersActivity"
+            android:label="@string/offer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.WhyRaadarbarActivity"
+            android:label="@string/offer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AdvanceBookingThanksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ThanksScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ListPakegesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.NewCustomerWaitingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.RideDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.HelpActivity"
+            android:exported="true"
+            android:label="@string/helppage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SelectedPakegeShowActivity"
+            android:screenOrientation="portrait" /> <!-- android:excludeFromRecents="true" -->
+        <activity
+            android:name=".Activity.SelectLanguageActivity"
+            android:label="@string/SelectLanguageactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SourceSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.DestinationSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity -->
+        <!-- android:name=".Activity.Cutomore_map" -->
+        <!-- android:label="@string/title_activity_cutomore_map" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".Activity.SelectCarTypeActivity"
+            android:label="@string/title_activity_select_pakeges"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.CutomerWaitingActivity"
+            android:label="@string/title_activity_cust_home_page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CustHomePageActivity"
+            android:label="@string/title_activity_cust_home_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.AdvancebknSelectedPakegeShow"
+            android:label="@string/title_activity_cust_home_page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity -->
+        <!-- android:name=".Activity.SelectLanguageActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <activity
+            android:name=".Activity.RideHistoryActivity"
+            android:label="@string/ridehistry"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.PaymentActivity"
+            android:label="@string/paymentpage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".test.BottomSheetActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity> <!-- <activity -->
+        <!-- android:name=".AlarmReceiverActivity" -->
+        <!-- android:label="@string/paymentpage" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="raadarbar.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity> <!-- <service android:name=".Test.StickyService" /> -->
+        <!-- <receiver android:name=".Test.RestartServiceReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="IWillStartAuto" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <receiver android:name=".NewAdded.SmsBroadcastReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.provider.Telephony.SMS_RECEIVED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/notification_channel_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- <provider -->
+        <!-- android:name=".GenericFileProvider" -->
+        <!-- android:authorities="${applicationId}.fileproviders" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/external_files"/> -->
+        <!-- </provider> -->
+        <service android:name=".Notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+            android:value="true" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider12345"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="25dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="25dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:src="@drawable/alert" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:textSize="22dp"
+            android:textColor="@color/bleck"
+            android:text="@string/alert" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/bleck" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/farerate"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/bleck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fare" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/price"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/bleck"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 1500" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/appred"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pricediff" />
+
+        <com.hopetechno.raadarbar.Fonts.CButton
+            android:id="@+id/conride"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:background="@color/appred"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next" />
+
+        <com.hopetechno.raadarbar.Fonts.CButton
+            android:id="@+id/canride"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/bleck"
+            android:background="@color/lightgrey"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</RelativeLayout>

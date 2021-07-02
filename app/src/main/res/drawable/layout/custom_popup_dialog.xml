@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectjou"
+            android:textColor="@color/bleck"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/selectjourny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:text="@string/singleway"
+                android:textColor="@color/grey"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/returntrip"
+                android:textColor="@color/grey"
+                android:textSize="14dp" />
+
+        </RadioGroup>
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/selectfuel"
+            android:textColor="@color/bleck"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <RelativeLayout
+                android:id="@+id/diesellayout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/layout_border">
+
+                <ImageView
+                    android:id="@+id/dieselcar"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/diesel" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/petrollayout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/layout_border"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/petrolcar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/petrol" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cnglayout"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/layout_border">
+
+                <ImageView
+                    android:id="@+id/cngcar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cng" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.SelectedPakegeShow">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_20sdp">
+
+        <RelativeLayout
+            android:id="@+id/onelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:id="@+id/txt1"
+                android:text="@string/yourestimatedprice"
+                android:textColor="@color/bleck" />
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/pricetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:text="@string/emialenter"
+                android:textColor="@color/appred"
+                android:textSize="20dp"
+                android:layout_below="@+id/txt1"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold" />
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/jarny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:textColor="@color/bleck"
+                android:layout_below="@+id/pricetext"
+                android:layout_centerHorizontal="true"/>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/jarny"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="@color/lightwhite"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:id="@+id/ll1"-->
+            <!--android:visibility="visible">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:id="@+id/kmtext"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_gravity="center"-->
+            <!--android:text="20"-->
+            <!--android:textColor="@color/bleck"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="KM"-->
+
+            <!--android:textColor="@color/grey"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:id="@+id/hrtext"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="2dp"-->
+
+            <!--android:text="2"-->
+            <!--android:textColor="@color/bleck"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="HRS"-->
+
+            <!--android:textColor="@color/grey"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:id="@+id/basefare"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="2dp"-->
+
+            <!--android:text="1500"-->
+            <!--android:textColor="@color/bleck"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Base Fare"-->
+            <!--android:textColor="@color/grey"-->
+            <!--android:textSize="18dp"-->
+
+            <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/textwltamnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:text="@string/yourestimatedprice"
+                android:textColor="@color/bleck"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:layout_below="@+id/jarny"
+                android:layout_centerHorizontal="true"/>
+
+            <!--<com.hopetechno.raadarbar.Fonts.CTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="2dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="10 KM Minimum Fare"-->
+            <!--android:textColor="@color/bleck"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:visibility="visible"-->
+            <!--android:id="@+id/txt3"-->
+            <!--android:layout_below="@+id/textwltamnt"-->
+            <!--android:layout_centerHorizontal="true"/>-->
+
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Terms and condition are applied"
+                android:textColor="@color/grey"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/txt4"
+                android:layout_below="@+id/textwltamnt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10sdp" />
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/conditionone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:layout_below="@+id/txt4"
+                android:layout_centerHorizontal="true"
+                />
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:id="@+id/booknow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/appred"
+                android:layout_below="@+id/conditionone"
+                android:text="@string/conride"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:textColor="@color/white" />
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:id="@+id/backbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/booknow"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="45dp"
+                android:background="@color/appred"
+                android:text="@string/back"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/yourbookingdone" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thankstext"
+            android:layout_marginBottom="25dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/bleck" />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/giveratinguser"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/bleck" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="1" />
+
+        <com.hopetechno.raadarbar.Fonts.CEditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:maxLength="250"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:scrollbars="horizontal"
+            android:inputType="textMultiLine"
+            android:hint="Feedback Message" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/submit_button_border"
+                android:textColor="@color/white"
+                android:text="Submit" />
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:id="@+id/skip"
+                android:layout_margin="15dp"
+                android:visibility="gone"
+                android:background="@drawable/button_border"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/skip"
+                android:text="Skip" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

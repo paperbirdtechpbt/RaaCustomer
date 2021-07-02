@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                tools:context=".Activity.SelectCarTypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:orientation="vertical"
+        android:id="@+id/main"
+        android:padding="5dp">
+
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statingtimepreselected"
+            android:textColor="@color/bleck"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/datelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/textdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Booking date and time: "
+                android:textColor="@color/bleck"
+                android:textSize="15dp"/>
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/bleck"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:id="@+id/prebooking"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/preebookingh"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+
+            android:padding="3dp"
+            android:text="@string/yourestimatedprice"
+            android:textColor="@color/bleck"/>
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/pricetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+            android:text="@string/emialenter"
+            android:textColor="@color/appred"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+
+        <RelativeLayout
+            android:id="@+id/onelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <RelativeLayout
+                android:id="@+id/rltextviewradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textwltamnt">
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/txtsftype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/selectjou"
+                    android:textColor="@color/bleck"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"/>
+
+                <com.hopetechno.raadarbar.Fonts.CTextView
+                    android:id="@+id/txtselejr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtsftype"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Select fuel type"
+                    android:textColor="@color/bleck"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/radiorl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textwltamnt"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/rltextviewradio">
+
+
+                <RadioGroup
+                    android:id="@+id/selectjourny"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <RadioButton
+                            android:id="@+id/rsingletrip"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/singleway"
+                            android:textColor="@color/grey"
+                            android:textSize="14dp"/>
+
+                        <RadioButton
+                            android:id="@+id/rreturntrip"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/returntrip"
+                            android:textColor="@color/grey"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupFuelType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/selectjourny"
+                    android:layout_marginStart="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <RadioButton
+                            android:id="@+id/rbtnCng"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="CNG"
+                            android:textColor="@color/grey"
+                            android:textSize="14dp"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnDiesel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Diesel"
+                            android:textColor="@color/grey"
+                            android:textSize="14dp"/>
+
+
+                    </LinearLayout>
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radiorl"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Offers"
+            android:textAlignment="center"
+            android:textColor="@color/bleck"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/conditionone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_10sdp"
+        />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/conditionone1"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/conditionone"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_terms"
+            android:gravity="start"
+        />
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/endingtimepreselected"
+            android:textColor="@color/bleck"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/enddatelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/endtextdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Booking date and time: "
+                android:textColor="@color/bleck"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+            <com.hopetechno.raadarbar.Fonts.CTextView
+                android:id="@+id/enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/bleck"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+            <com.hopetechno.raadarbar.Fonts.CButton
+                android:id="@+id/endprebooking"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/preebookingh"/>
+        </LinearLayout>
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/selectedcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/selectcar"
+            android:textColor="@color/bleck"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <com.hopetechno.raadarbar.Fonts.CTextView
+            android:id="@+id/fuleselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/selectfueltype"
+            android:textColor="@color/bleck"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:visibility="gone"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:prompt="@string/forspinnar"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <com.hopetechno.raadarbar.Fonts.CButton
+        android:id="@+id/next"
+        android:layout_below="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_marginRight="20dp"
+        android:background="@color/appred"
+        android:text="@string/conride"
+        android:textColor="@color/white"/>
+
+    <com.hopetechno.raadarbar.Fonts.CButton
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_marginRight="20dp"
+        android:background="@color/appred"
+        android:text="@string/back"
+        android:textColor="@color/white"/>
+
+
+    <!--<com.hopetechno.raadarbar.Fonts.CButton-->
+        <!--android:id="@+id/next"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginStart="25dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_marginEnd="25dp"-->
+        <!--android:layout_marginBottom="25dp"-->
+        <!--android:background="@drawable/button_border"-->
+        <!--android:text="@string/conbooking"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textStyle="bold"/>-->
+
+
+</RelativeLayout>

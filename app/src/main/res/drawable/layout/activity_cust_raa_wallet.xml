@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.CustRaaWalletActivity">
+
+
+    <com.hopetechno.raadarbar.Fonts.CTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Your Raa Wallet Amount"
+        android:textColor="@color/grey"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+
+    <com.hopetechno.raadarbar.Fonts.CTextView
+        android:id="@+id/textrupee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/bleck"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
