@@ -27,7 +27,7 @@ public class PdfViewActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-//pdf View Commite
+        //pdf View Commite
         PDFView pdfView = findViewById(R.id.pdfView);
         String pdfPath = getIntent().getExtras().getString("file");
         pdfView.fromUri(Uri.fromFile(new File(pdfPath))).load();
