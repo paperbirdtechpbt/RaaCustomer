@@ -3691,6 +3691,18 @@ public class CustHomePageActivity extends AppCompatActivity implements Connectiv
             }
         }
 
+    public static boolean isNumeric(String strNum) {
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            double d = Double.parseDouble(strNum);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
+    }
+
         @Override
         protected void onResume () {
             super.onResume();
@@ -3698,14 +3710,14 @@ public class CustHomePageActivity extends AppCompatActivity implements Connectiv
             if (editText1 != null && editText2 != null && !editText1.getText().toString().isEmpty() && !editText2.getText().toString().isEmpty()) {
 
                 SharedPreferences sharedpreferences = getSharedPreferences("Login", Context.MODE_PRIVATE);
-                String latitude = sharedpreferences.getString("temp_lat", "");
+                String latitude =  sharedpreferences.getString("temp_lat", "");
                 String longitude = sharedpreferences.getString("temp_long", "");
-
-                if (!latitude.isEmpty() && !longitude.isEmpty()) {
+                if (isNumeric(latitude) && isNumeric(longitude) ) {
                     if (isDistnceOutOfAhemedabad(latitude, longitude)) {
                         isOutofAhemedaBad = true;
                     }
                 }
+
             }
 
             if (network) {

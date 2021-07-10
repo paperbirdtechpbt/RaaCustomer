@@ -8,8 +8,8 @@ android {
         applicationId "com.hopetechno.raadarbar"
         minSdkVersion 18
         targetSdkVersion 29
-        versionCode 72
-        versionName "2.63"
+        versionCode 74
+        versionName "2.65"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         useLibrary 'org.apache.http.legacy'
         multiDexEnabled true
